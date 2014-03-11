@@ -1,0 +1,140 @@
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>本科生学术项目中止率调查 - 数读复旦</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/fdurop.css">
+	<script language="javascript" src="js/jquery-2.0.3.js"></script>
+	<title>R2D3 101</title>
+	<script language="javascript" src="js/d3.v3.js"></script>
+    <!--[if lte IE 8]><script language="javascript" src="js/r2d3.js" charset="utf-8"></script><![endif]-->
+    
+
+	
+</head>
+<body>
+	<div class="header_layout_top"></div>
+	<div class="header_layout">
+		<div id="header">
+			<div id="logo">
+				<img src="images/logo.png" />
+			</div>
+			<div id="slogan">
+				数据有灵且美
+			</div>
+			<div id="title">
+				本科生学术项目中止率调查
+			</div>
+		</div>
+	</div>
+	<div class="clear"></div>
+	<div id="content">
+		<div id="page_left">
+			<div id="fdurop_intro" class="leftCanvas">
+				<div class="intro">
+					<div class="intro_article"><p>从李政道先生于1998年设立的“莙政项目”起，FDUROP（复旦大学本科生学术研究资助计划）已经开展了15个年头。然而其网站上公开的历年累计数据显示，所有尘埃落定的项目中约有五分之一中止，个别院系的中止率甚至达到了接近七成。</p></div>
+					<div class="intro_legend">
+						<div class="legend_content">
+							<div id="legend_genral_icon">
+								<img src="images/legend-genral.png"></img>
+							</div>
+							<div id="legend_genral_brief">每个圆代表一个院系
+							</div>
+							
+						</div>
+						<div class="clear"></div>
+						<div class="legend_content">
+							<p>大小表示其FDUROP项目总数</p>
+							<img src="images/legend_amount.png"></img>
+						</div>
+						
+						<div class="legend_content">
+							<p>颜色表示其FDUROP项目中止率</p>
+							<img src="images/legend_abort.png"></img>
+						</div>
+					</div>
+				</div>
+				<div id="intro_graph"></div>
+			</div>
+			<div id="fdurop_detail" style="display:none;" class="leftCanvas">
+				<div id="detail_legend">
+					<div id="detail_legend_dept" class="detail_legend_part">院系名称	
+					</div>
+					<div id="detail_legend_radio" class="detail_legend_part">中止率	
+					</div>
+					<div id="detail_legend_jz" class="detail_legend_pj">莙政计划
+					</div>
+					<div id="detail_legend_wd" class="detail_legend_pj">望道计划
+					</div>
+					<div id="detail_legend_xy" class="detail_legend_pj">曦源计划
+					</div>
+					<div class="detail_legend_note">点击各圆可查看详细数据</div>
+				</div>
+				<div class="clear"></div>
+				<div class="detail_axis">
+					<img src="images/detail_axis.png"></img>
+				</div>
+				<div id="detail_graph"></div>
+			</div>
+			<div id="fdurop_brief" style="display:none;" class="leftCanvas">
+				<img src="images/fdurop_about.jpg"></img>
+			</div>
+
+		</div>
+		
+		<script language="javascript" src="js/database.js"></script>
+		<script language="javascript" src="js/data.js"></script>
+		<script language="javascript" src="js/main.js"></script>
+		<div id="sidebar">
+			<ul id="nav">
+				<li><a href="#" class="nav_btn nav_btn_current">概况</a></li>
+				<li><a href="#" class="nav_btn">分项详情</a></li>
+				<li><a href="#" class="nav_btn">关于FDUROP</a></li>
+			</ul>
+			<div class="clear"></div>
+			<div class="piechart">
+				<img src="images/piechart.png"></img>
+			</div>
+			<div class="piechart_description">
+				<div id="piechart_fin" class="piechart_legend">
+					<span>62%</span>结项数：1849
+				</div>
+				<div id="piechart_abort" class="piechart_legend">
+					<span>17%</span>中止数：521
+				</div>
+				<div id="piechart_ing" class="piechart_legend">
+					<span>21%</span>进行中：622
+				</div>
+				<div id="piechart_note">
+					进行中的项目未列入中止率统计
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="clear"></div>
+	<div id="footer">
+		<div class="footerline"></div>
+		<div class="footer_info">策划：彭珅&nbsp;&nbsp;&nbsp;&nbsp;编辑：黄安利&nbsp;&nbsp;&nbsp;&nbsp;制作：钱晟、王诗韵</div>
+		<div class="footer_info">复旦学生网 & 复旦青年 版权所有&nbsp;&nbsp;&nbsp;&nbsp;All Rights Reserved &copy; 2014</div>
+		<div class="footer_info">
+
+			<a href="http://stu.fudan.edu.cn" target="_blank">复旦学生网首页</a> | 
+			<a href="http://youth.fudan.edu.cn/new/index.php?action=depnavigation&second=5" target="_blank">《复旦青年》电子版</a> | 
+			<a href="mailto:stu@fudan.edu.cn">联系我们</a>
+		</div>
+		<div class="footer_logo"><img src="images/footer_logo.png"/></div>
+	</div>
+	<script type="text/javascript">
+		$("#sidebar ul li a").click(function () {
+    		var i = $(this).parent().index();
+    		$("#sidebar ul li a").removeClass("nav_btn_current");
+    		$(this).addClass("nav_btn_current");
+    		$("#page_left > div").hide();
+    		$(".node").remove();
+    			$("#page_left > div").eq(i).fadeIn(1000, function () {
+					if(i<2){root[i].update();}
+    			});
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,269 @@
+html {
+	font-family: "微软雅黑",Arial,"san-serif";
+	font-size:14px;
+	color: #7c7878;
+	
+}
+
+p{
+	text-indent: 2em;
+	line-height: 150%;
+}
+
+a{
+	text-decoration: none;
+	color: #7c7878;
+}
+
+div{
+	background-repeat: no-repeat;
+}
+
+#header,#content,#footer{
+	width: 960px;
+	margin: 0 auto;
+}
+
+.clear{
+	clear: both;
+}
+
+/* header */
+.header_layout_top{
+	background-color: #d44434;
+	height: 5px;
+}
+
+.header_layout{
+	background-color: #4d4645;
+	height: 50px;
+	color: #ffffff;
+}
+
+#logo {
+	margin: 10px 15px 15px 20px;
+	float: left;
+}
+
+#slogan {
+	float: left;
+	font-size: 14px;
+	padding-top: 20px;
+}
+
+#title{
+	float: left;
+	font-size: 24px;
+	margin-top: 11px;
+	margin-left: 200px;
+}
+
+/*content */
+#page_left{
+	float: left;
+	width: 775px;
+}
+
+.leftCanvas{
+	width: 755px;
+	margin-top: 40px;
+	margin-left:20px;
+}
+
+
+/* fdurop_intro */
+.intro{
+	float: left;
+	width: 215px;
+}
+
+.intro_article{
+	padding-top: 0px;
+}
+
+.intro_legend{
+	margin-top: 80px;
+}
+
+.legend_content{
+	margin: 20px 5px;
+}
+
+	.legend_content div{
+		float: left;
+	}
+
+	.legend_content p{
+		text-indent: 0;
+		line-height: 200%;
+	}
+
+	.legend_content img{
+		margin-top: 6px;
+	}
+
+	.legend_general_icon{
+		width: 30px;
+	}
+
+	#legend_genral_brief{
+		margin-left: 10px;
+		margin-top: 12px;
+		
+	}
+
+
+#intro_graph{
+	float: left;
+	width: 540px;
+}
+
+/*fdurop_detail */
+.detail_legend_part{
+	background-image: url(../images/detail_li.png);
+	padding-left: 10px;
+	color: #ef5948;
+	font-size: 16px;
+	float: left;
+}
+#detail_legend_dept{
+	width: 170px;
+}
+#detail_legend_radio{
+	width: 85px;
+}
+.detail_legend_pj{
+	background-position: 0 1px;
+	margin-top: 1px;
+	font-size: 14px;
+	float: left;
+	width: 80px;
+	padding-left: 20px;
+}
+
+#detail_legend_jz{
+	background-image: url(../images/detail_legend_jz.png);
+	color: #ef5948;
+}
+
+#detail_legend_wd{
+	background-image: url(../images/detail_legend_wd.png);
+	color: #2f8898;
+}
+
+#detail_legend_xy{
+	background-image: url(../images/detail_legend_xy.png);
+	color: #a7e443;
+}
+
+.detail_legend_note{
+	padding-top: 4px;
+	font-size: 12px;
+	color: #b0b0b0;
+}
+
+.detail_axis{
+	margin-top: 10px;
+}
+
+/*sidebar */
+#sidebar{
+	width: 165px;
+	float: right;
+	margin-right: 20px;
+	margin-top: 40px;
+}
+
+#sidebar ul{
+	font-size: 18px;
+}
+
+#sidebar li{
+	background-image: url(../images/nav_li.png);
+	background-repeat: no-repeat;
+	height: 36px;
+	width: 150px;
+	margin-bottom: 18px;
+	float: left;
+}
+
+#sidebar .nav_btn{
+	width: 150px;
+	padding-left: 15px;
+	float: left;
+	line-height: 200%;
+}
+
+#sidebar a:hover,#sidebar .nav_btn_current{
+	background-color: #f75b49;
+	color: #ffffff;
+}
+
+.piechart{
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.piechart_legend{
+	margin-bottom: 12px;
+	padding-left: 20px;
+	background-position: 0 1px;
+}
+
+	.piechart_legend span{
+		margin-right: 20px;
+	}
+
+	#piechart_fin{
+		background-image: url(../images/piechart_fin.png);
+	}
+
+	#piechart_fin span{
+		color:#a7e443;
+	}
+
+	#piechart_abort{
+		background-image: url(../images/piechart_abort.png);
+	}
+
+	#piechart_abort span{
+		color:#f75b49;
+	}
+
+	#piechart_ing{
+		background-image: url(../images/piechart_ing.png);
+	}
+
+	#piechart_ing span{
+		color:#4d4645;
+	}
+
+#piechart_note{
+	line-height: 120%;
+	color: #b0b0b0;
+}
+
+#footer{
+	margin-top: 25px;
+	text-align: center;
+}
+
+.footerline{
+	width: 920px;
+	margin-left: 20px;
+	margin-bottom: 10px;
+	background-color: #f75b49;
+	height: 2px;
+}
+
+.footer_info{
+	line-height: 150%;
+}
+
+	.footer_info a:hover{
+		color: #f75b49;
+	}
+
+.footer_logo{
+	margin:10px auto;
+}
