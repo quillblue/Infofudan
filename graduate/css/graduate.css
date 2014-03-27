@@ -1,0 +1,145 @@
+html {
+	font-family: "微软雅黑",Arial,"san-serif";
+	font-size:14px;
+	color: #7c7878;
+	background-color: #ebebeb;
+}
+
+p{
+	text-indent: 2em;
+	line-height: 150%;
+}
+
+a{
+	text-decoration: none;
+	
+}
+
+div{
+	background-repeat: no-repeat;
+}
+
+#header,#content,#footer{
+	width: 960px;
+	margin: 0 auto;
+}
+
+.clear{
+	clear: both;
+}
+
+/* header */
+.header_layout_top{
+	background-color: #d44434;
+	height: 5px;
+}
+
+.header_layout{
+	background-color: #4d4645;
+	height: 50px;
+	color: #ffffff;
+}
+
+#logo {
+	margin: 10px 15px 15px 20px;
+	float: left;
+}
+
+#slogan {
+	float: left;
+	font-size: 14px;
+	padding-top: 20px;
+}
+
+#title{
+	float: left;
+	font-size: 24px;
+	margin-top: 11px;
+	margin-left: 200px;
+}
+
+/*content */
+.header_canvas{
+	width: 920px;
+	height: 42px;
+	margin-top:40px;
+	margin-left: 20px;
+	background-color: #f75b49;	
+}
+.intro{
+	float: left;	
+	width: 380px;
+	padding-top: 12px;
+	margin-left: 40px;
+	color: #ffffff;
+	font-size: 18px;
+
+}
+
+.nav_bar{
+	float: left;
+	width: 500px;	
+}
+
+	.nav_bar ul li{
+		width: 120px;
+		float: left;
+		padding: 11px 0;
+	}
+
+	.nav_bar .nav_btn{
+		color: #ffffff;
+		font-size: 20px;
+		padding:8px 20px 8px 20px;
+	}
+
+		.nav_bar a:hover,.nav_bar .nav_btn_current{
+			color: #666666;
+			background-color: #f3f3f3;
+		}
+
+.graph_canvas{
+	position: absolute;
+	width: 960px;
+	height: 630px;
+	overflow: hidden;
+}
+
+.graph{
+	position: absolute;
+	width: 920px;
+	height: 4000px;
+	top: -80px;
+	margin-left: 20px;
+	background-image: url(../images/graduate2.jpg);
+}
+
+/*footer */
+#footer{
+	margin-top: 655px;
+	text-align: center;
+}
+
+#footer a{
+	color: #7c7878;
+}
+
+.footerline{
+	width: 920px;
+	margin-left: 20px;
+	margin-bottom: 10px;
+	background-color: #f75b49;
+	height: 2px;
+}
+
+.footer_info{
+	line-height: 150%;
+}
+
+	.footer_info a:hover{
+		color: #f75b49;
+	}
+
+.footer_logo{
+	margin:10px auto;
+}

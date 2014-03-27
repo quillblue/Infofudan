@@ -1,0 +1,74 @@
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>2013届毕业生就业质量报告 - 数读复旦</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/graduate.css">
+	<script language="javascript" src="js/jquery-2.0.3.js"></script>
+	<script language="javascript" src="js/d3.v3.js"></script>
+    <!--[if lte IE 8]><script language="javascript" src="js/r2d3.js" charset="utf-8"></script><![endif]-->
+    
+
+	
+</head>
+<body>
+	<div class="header_layout_top"></div>
+	<div class="header_layout">
+		<div id="header">
+			<div id="logo">
+				<img src="images/logo.png" />
+			</div>
+			<div id="slogan">
+				数据有灵且美
+			</div>
+			<div id="title">
+				2013届毕业生就业质量报告
+			</div>
+		</div>
+	</div>
+	<div class="clear"></div>
+	<div class="content_layout">
+		<div id="content">
+			<div class="header_canvas">
+				<div class="intro">2013届毕业生都去哪儿深造?</div>
+				<div class="nav_bar">
+					<ul id="nav">
+						<li><a href="#" class="nav_btn nav_btn_current">生源构成</a></li>
+						<li><a href="#" class="nav_btn">去向统计</a></li>
+						<li><a href="#" class="nav_btn">就业分布</a></li>
+						<li><a href="#" class="nav_btn">出国情况</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="graph_canvas">
+				<div id="graph" class="graph"></div>
+			</div>
+		</div>
+		<div clear="all"></div>
+	</div>
+	<div id="footer">
+		<div class="footerline"></div>
+		<div class="footer_info">信息来源：各高校2013届毕业生就业质量报告&nbsp;&nbsp;&nbsp;&nbsp;设计制作：王诗韵&nbsp;&nbsp;钱晟</div>
+		<div class="footer_info">复旦学生网 & 复旦青年 版权所有&nbsp;&nbsp;&nbsp;&nbsp;All Rights Reserved &copy; 2014</div>
+		<div class="footer_info">
+
+			<a href="http://stu.fudan.edu.cn" target="_blank">复旦学生网首页</a> | 
+			<a href="http://youth.fudan.edu.cn/new/index.php?action=depnavigation&second=5" target="_blank">《复旦青年》电子版</a> | 
+			<a href="mailto:stu@fudan.edu.cn">联系我们</a>
+		</div>
+		<div class="footer_logo"><img src="images/footer_logo.png"/></div>
+	</div>
+	<script type="text/javascript">
+		$("#sidebar ul li a").click(function () {
+    		var i = $(this).parent().index();
+    		$("#sidebar ul li a").removeClass("nav_btn_current");
+    		$(this).addClass("nav_btn_current");
+    		$("#page_left > div").hide();
+    		$(".node").remove();
+    			$("#page_left > div").eq(i).fadeIn(1000, function () {
+					if(i<2){root[i].update();}
+    			});
+		});
+	</script>
+</body>
+</html>
