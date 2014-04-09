@@ -64,7 +64,7 @@ div{
 	height: 42px;
 	margin-top:40px;
 	margin-left: 20px;
-	background-color: #f75b49;	
+	background-color: #fd625e;	
 }
 .intro{
 	float: left;	
@@ -101,7 +101,7 @@ div{
 .graph_canvas{
 	position: absolute;
 	width: 960px;
-	height: 630px;
+	height: 640px;
 	overflow: hidden;
 }
 
@@ -109,9 +109,16 @@ div{
 	position: absolute;
 	width: 920px;
 	height: 4000px;
-	top: -80px;
 	margin-left: 20px;
 	background-image: url(../images/graduate2.jpg);
+}
+
+#graph_nav{
+	position: absolute;
+	width: 20px;
+	height: 180px;
+	top:1370px;
+	left: 890px;
 }
 
 /*footer */

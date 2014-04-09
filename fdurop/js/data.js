@@ -215,7 +215,55 @@ function init1(){
 		});
 
 	}
+	function foreword(){
+		d3.select("#content")
+	  .append("div")
+	  .attr("id", "foreword")
+	   .on("mousedown", function(e){
+		  d3.select("#foreword")
+		  	.transition()
+		  	.duration(1000)
+		  	.style("opacity",0);
+	   })
+	  .style("opacity", "0")
+	  .style("-moz-opacity", "0")
+	  .style("filter", "alpha(opacity=0)")
+	  .transition()
+	  .duration(500)
+	  .style("opacity", "1")
+	  .style("-moz-opacity", "1")
+	  .style("filter", "alpha(opacity=100)");
+	
+	d3.select("#foreword")
+	  .append("div")
+	  .attr("id", "foreword_rect")
+	  .style("position", "absolute")
+      .append("div")
+	  .style("padding", "0px")
+	  .style("width", "450px")
+	  .style("height", "220px")
+	  .style("margin-top", "140px")
+	  .style("margin-left", "280px")
+	  .style("background-color", "#333")
+	  .style("background-repeat", "no-repeat")
+	  .style("background-image", "url(http://file.caixin.com/datanews/sangong/img/close.png)")
+	  .style("background-position", "right top");
+	
+	d3.select("#foreword_rect")
+	  .append("div")
+	  .attr("id", "foreword_text")
+	  .style("position", "absolute")
+	  .style("width", "410px")
+	  .style("margin-top", "-210px")
+	  .style("margin-left", "280px")
+	  .style("padding", "20px")
+	  .style("font-size", "14px")
+	  .style("color", "#FFF")
+	  .html("<h1 style='font-size:18px;text-align: center'>前 言</h1><p>&nbsp;</p><p>这里是由复旦学生网和《复旦青年》报社联合创立的复旦信息可视化实验室，「数读复旦」是这个实验室开发的第一款数据新闻产品。在这里，你将从另一个角度打量复旦，感受数据有灵且美。我们的最新专题有关于复旦、上交、清华、北大四校2013届学生的毕业去向，点击<a href=\"http://stu.fudan.edu.cn/infofudan/graduate/\" style=\"color:#f75b49\"><strong>这里</strong></a>从数据了解四校性格差异。前言背后，是实验室创建时的第一个专题，同样值得留步。</p>");
+	
+	}
 	drawData();
+	foreword();	
 	isFirst=0;
 }
 
@@ -432,3 +480,4 @@ function init2(){
 	drawDeptName();
 	drawData();
 }
+
